@@ -71,10 +71,10 @@ public class GildedRose {
                     break;
                 case "Conjured Mana Cake" :
                     if (item.getQuality() > 0) {
-                        item.setQuality(item.getQuality() - 1);
+                        item.setQuality(item.getQuality() - 2);
                     }
                     if (item.getSellIn() < 0 && item.getQuality() > 0) {
-                        item.setQuality(item.getQuality() - 1);
+                        item.setQuality(item.getQuality() - 2);
                     }
                     break;
             }
