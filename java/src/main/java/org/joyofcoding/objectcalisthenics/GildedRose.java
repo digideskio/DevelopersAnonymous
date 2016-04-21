@@ -21,7 +21,10 @@ public class GildedRose {
 	}
 
 	public void updateQuality(List<Item> items) {
-		for (int i = 0; i < items.size(); i++) {
+		for (Item item : items) {
+
+			String name = item.getName();
+
 			if (!items.get(i).getName().equals("Aged Brie")
 					&& !items.get(i).getName().equals("Backstage passes to a TAFKAL80ETC concert")) {
 				if (items.get(i).getQuality() > 0) {
